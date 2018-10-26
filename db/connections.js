@@ -1,9 +1,10 @@
+require('dotenv').config()
 // requirements: import mongoose
 const mongoose = require("mongoose")
 
-// Connect to a local database called "the-donut-shop"
+
 // When it connects, then console.log "Connected to MongoDB"
-mongoose.connect("mongodb://localhost/coupon_mongoose").then(() => {
+mongoose.connect('process.env.MONGODB_URI').then(() => {
   console.log("MONGODB is now connected")
 })
   // add a catch block 
