@@ -6,6 +6,7 @@ const routes = require('./routes/index')
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 app.use('/', routes)
+app.set('view engine', 'hbs')
 
 
 
