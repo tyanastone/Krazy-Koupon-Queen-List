@@ -15,6 +15,7 @@ router.get('/stores', storesController.index)
 router.get('/user/new', userController.new)
 
 router.post('/user', userController.create)
+router.get('/user/:id', userController.show)
 
 
 

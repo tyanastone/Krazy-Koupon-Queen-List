@@ -15,7 +15,12 @@ const userController = {
          res.redirect(`/user`)
         //  res.render('/user')
      })
-   } 
+    },
+    show: (req, res) => {
+        user.findById(req.params.id).then(userFromDb => {
+            res.render('user/show',{user: userFromDb})
+          })
+   }
 }
 
 module.exports = userController
