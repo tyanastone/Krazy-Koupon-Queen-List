@@ -7,6 +7,14 @@ const userController = {
     },
    new: (req, res) => {
        res.render('user/new')
+   },
+   create: (req, res) => {
+     // Have some info from express.
+     // Data that the user provides.
+     user.create(req.body).then((newUser) => {
+         res.redirect(`/user`)
+        //  res.render('/user')
+     })
    } 
 }
 
