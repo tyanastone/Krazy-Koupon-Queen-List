@@ -11,6 +11,9 @@ router.get('/', userController.index)
 
 router.get('/stores', storesController.index)
 
+// router.post('/user')
+router.get('/user/new', userController.new)
+
 
 
 
