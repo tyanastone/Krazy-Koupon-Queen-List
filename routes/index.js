@@ -16,6 +16,7 @@ router.get('/user/new', userController.new)
 
 router.post('/user', userController.create)
 router.get('/user/:id', userController.show)
+router.get('/user', userController.index)
 
 
 

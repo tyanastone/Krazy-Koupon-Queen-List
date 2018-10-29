@@ -1,5 +1,5 @@
 
-const user = require('../models/User')
+const User = require('../models/User')
 
 const userController = {
     index: (req, res) => {
@@ -11,13 +11,15 @@ const userController = {
    create: (req, res) => {
      // Have some info from express.
      // Data that the user provides.
-     user.create(req.body).then((newUser) => {
-         res.redirect(`/user`)
-        //  res.render('/user')
+       console.log('create route triggered')
+       
+       User.create(req.body).then((newUser) => {
+         console.log(newUser)
+         res.redirect(`/user/${newUser._id}`)
      })
     },
     show: (req, res) => {
-        user.findById(req.params.id).then(userFromDb => {
+        User.findById(req.params.id).then(userFromDb => {
             res.render('user/show',{user: userFromDb})
           })
    }
