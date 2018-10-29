@@ -3,7 +3,7 @@ const User = require('../models/User')
 
 const storesController = {
     index: (req, res) => {
-        Stores.find({}).populate('products')
+        Stores.find({})
             .then((stores) => {
                 // res.render sends to handlebars
                 res.render('stores/index', {
@@ -16,7 +16,7 @@ const storesController = {
     },
     show: (req, res) => {
         const storesId = req.params.storesId
-        Stores.findById(storesId).populate('products')
+        Stores.findById(storesId)
             .then((store) => {
                 // const products = store.products
             res.render('stores/show', {stores: stores})

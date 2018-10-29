@@ -9,6 +9,20 @@ router.get('/', applicationController.index)
 router.get('/', userController.index)
 
 
-router.get('/', storesController.index)
+router.get('/stores', storesController.index)
+
+
+
+
+
+// router.get('/stores/new', storesController.new)
+
+// router.get('/stores/show', storesController.show)
+
+// router.get('/stores/:storesId', storesController.show)
+
+// router.get('/stores/:storesId/products', productsController.index)
+
+// router.get('/stores/:storesId/products/:productsId', productsController.show)
 
 module.exports = router

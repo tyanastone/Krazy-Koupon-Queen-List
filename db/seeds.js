@@ -1,6 +1,9 @@
 const User = require('../models/User.js')
 // const Product = require('../models/Product.js')
 const mongoose = require('./connections')
+const Stores = require('../models/Stores.js')
+
+
 
 const greg = new User ({
     name: "Greg",
@@ -14,12 +17,27 @@ const alex = new User ({
 
 const mariah = new User ({
     name: "Mariah",
-   image: "https://unsplash.com/photos/mEZ3PoFGs_k",
+   image: "https://unsplash.com/photos/mEZ3PoFGs_k"
+})
+
+const kroger = new Stores ({
+    name: "kroger",
+   address: "1225 Caroline St NE, Atlanta, GA 30307"
+})
+
+const target = new Stores ({
+    name: "target",
+   address: "1275 Caroline St NE, Atlanta, GA 30307",
+})
+
+const walmart = new Stores ({
+    name: "walmart",
+   address: "835 Martin Luther King Junior Drive Northwest, Atlanta, GA 30314",
 })
 
 // This clears your database of extraneous information prior to seeding your database
 User.remove({})
-    .then(() => User.insertMany([greg, alex, mariah]))
+    .then(() => Stores.insertMany([kroger, target, walmart]))
     .then(() => greg.save())
     .then(() => alex.save())
     .then(() => mariah.save())

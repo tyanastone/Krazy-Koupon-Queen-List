@@ -1,0 +1,9 @@
+<h1>Welcome To Your Stores</h1>
+{{#each stores}}
+<div class="card">
+    <div class="card-body">
+        <h4 class="card-title">{{name}}</h4>
+<a href="/stores/{{_id}}"><button>Go To This Store</button></a>
+    </div>
+</div>
+{{/each}}
