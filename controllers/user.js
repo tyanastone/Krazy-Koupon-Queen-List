@@ -22,7 +22,10 @@ const userController = {
         User.findById(req.params.id).then(userFromDb => {
             res.render('user/show',{user: userFromDb})
           })
-   }
+    },
+    edit: (req, res) => {
+        
+    }
 }
 
 module.exports = userController

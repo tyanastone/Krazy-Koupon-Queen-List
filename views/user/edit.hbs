@@ -1,0 +1,27 @@
+<main>
+
+	<h2>Edit Your Profile!</h2>
+
+	<a href="/">Return to Home Page</a>
+
+	
+
+	<form action="/{{user._id}}?_method=PATCH" method="POST">
+		
+		<input type="text" name="name" value="{{user.name}}">
+		
+		<input type="text" name="img" value="{{user.img}}">
+		
+		
+		<button type="submit">Create New User</button>
+		
+		
+		</form>
+
+
+		{{!-- <div id="img-preview">
+			<img src="{{donut.img}}">
+		</div> --
+
+	
+</main>

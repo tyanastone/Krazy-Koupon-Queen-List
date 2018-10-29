@@ -18,6 +18,8 @@ router.post('/user', userController.create)
 router.get('/user/:id', userController.show)
 router.get('/user', userController.index)
 
+router.get('/:id/edit', userController.edit)
+
 
 
 // router.get('/stores/new', storesController.new)
