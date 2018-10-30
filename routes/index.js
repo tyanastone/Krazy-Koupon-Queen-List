@@ -22,7 +22,8 @@ router.get('/user', userController.index)
 router.get('/user/:id/edit', userController.edit)
 router.patch('/user/:id', userController.update)
 router.delete('/:id', userController.delete)
-router.delete('/:id', storesController.delete)
+router.delete('/stores/:id', storesController.delete)
+
 router.get('/coupons', couponsController.index)
 
 

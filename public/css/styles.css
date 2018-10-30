@@ -38,18 +38,18 @@ nav h1 {
 	display: inline-block;
 	font-size: 3em;
 }
-#shoppingcart {
+/* #shoppingcart {
 	padding-right: 10%;
 	display: inline-block;
 	float: right;
 	text-align: center;
-}
+} */
 
-#shoppingcart img {
+/* #shoppingcart img {
 	margin: 0 auto;
 	display: inline-block;
 	width: 60px;
-}
+} */
 
 /*img {
 	width: 200px;
