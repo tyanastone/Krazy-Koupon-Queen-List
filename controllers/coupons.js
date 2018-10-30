@@ -10,6 +10,7 @@ const couponsController = {
 
         }) 
     },
+    
     show: (req, res) => {
         // do this so that you do't have to pass req.params inside of find by id
         const couponsId = req.params.couponsId
