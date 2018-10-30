@@ -11,7 +11,6 @@ const userController = {
    create: (req, res) => {
      // Have some info from express.
      // Data that the user provides.
-       console.log('create route triggered')
        
        User.create(req.body).then((newUser) => {
          console.log(newUser)
