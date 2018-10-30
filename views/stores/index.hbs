@@ -3,7 +3,10 @@
 <div class="card">
     <div class="card-body">
         <h4 class="card-title">{{name}}</h4>
-<a href="/stores/{{_id}}"><button>View Coupons</button></a>
+<a href="/coupons"><button>View Coupons</button></a>
+
+
+{{!-- FIXME: --}}
 <form action="/{{stores._id}}?_method=DELETE" method="POST">
 		<button type="submit">Delete store</button>
 		</form>

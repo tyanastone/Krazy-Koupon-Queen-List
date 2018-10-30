@@ -3,6 +3,7 @@ const router = express.Router()
 const applicationController = require('../controllers/application')
 const userController = require('../controllers/user')
 const storesController = require('../controllers/stores')
+const couponsController = require('../controllers/coupons')
 
 router.get('/', applicationController.index)
 
@@ -22,6 +23,7 @@ router.get('/user/:id/edit', userController.edit)
 router.patch('/user/:id', userController.update)
 router.delete('/:id', userController.delete)
 router.delete('/:id', storesController.delete)
+router.get('/coupons', couponsController.index)
 
 
 

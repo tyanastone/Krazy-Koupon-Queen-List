@@ -3,10 +3,13 @@ const Schema = mongoose.Schema
 
 
 const Coupons = new Schema({
+    name: String,
     type: String,
     img: String,
-    Price: 
+    price: String,
+    description: String,
+    expiration_date: Date
 })
 
 
-module.exports = mongoose.model("User",User)
+module.exports = mongoose.model("Coupons",Coupons)

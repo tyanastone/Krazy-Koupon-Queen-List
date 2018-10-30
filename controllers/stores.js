@@ -22,6 +22,7 @@ const storesController = {
             res.render('stores/show', {stores: stores})
         })
     },
+    // FIXME:
     delete: (req, res) => {
         Stores.findByIdAndRemove(req.params.id).then(() => {
             res.redirect('/stores')
