@@ -43,9 +43,28 @@ const razor = new Coupons({
     description: "$3 off the purchase of 1",
     expiration_date: "Date"
 })
+
+const tide = new Coupons({
+    name: "Tide",
+    type: "paper",
+    img: "https://scontent.fatl1-2.fna.fbcdn.net/v/t1.0-9/44932841_10217519641126994_5755323173834850304_n.jpg?_nc_cat=101&_nc_ht=scontent.fatl1-2.fna&oh=2747205dc579b0abc890f99b634fe87a&oe=5C7F6D29",
+    price: "$3/1",
+    description: "$3 off the purchase of 1",
+    expiration_date: "Date"
+})
+
+const gain = new Coupons({
+    name: "Gain",
+    type: "paper",
+    img: "https://scontent.fatl1-2.fna.fbcdn.net/v/t1.0-9/44932841_10217519641126994_5755323173834850304_n.jpg?_nc_cat=101&_nc_ht=scontent.fatl1-2.fna&oh=2747205dc579b0abc890f99b634fe87a&oe=5C7F6D29",
+    price: "$3/1",
+    description: "$3 off the purchase of 1",
+    expiration_date: "Date"
+})
 // This clears your database of extraneous information prior to seeding your database
 User.remove({})
     .then(() => Stores.insertMany([kroger, target, walmart]))
+    // .then(() => Coupons.insertMany([razor, tide, gain]))
     .then(() => greg.save())
     .then(() => alex.save())
     .then(() => mariah.save())

@@ -1,3 +1,5 @@
+const Stores = require('../models/Stores')
+const User = require('../models/User')
 const Coupons = require('../models/Coupons')
 
 const couponsController = {
