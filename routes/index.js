@@ -7,7 +7,7 @@ const couponsController = require('../controllers/coupons')
 
 router.get('/', applicationController.index)
 
-router.get('/', userController.index)
+// router.get('/', userController.index)
 
 
 router.get('/stores', storesController.index)
