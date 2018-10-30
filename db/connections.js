@@ -4,7 +4,7 @@ require('dotenv').config()
 const mongoose = require('mongoose')
 
 // Connect to a local database called "the-donut-shop"
-mongoose.connect('mongodb://localhost/coupon_mongoose')
+mongoose.connect(process.env.MONGODB_URI)
   .then(() => {
     // When it connects, then console.log "Connected to MongoDB"
     console.log('Connected to MongoDB')
