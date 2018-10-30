@@ -23,9 +23,21 @@ const userController = {
             res.render('user/show',{user: userFromDb})
           })
     },
+    update: (req, res) => {
+        User.findByIdAndUpdate(req.params.id, req.body).then((updatedUser) => {
+            res.redirect(`/user/${updatedUser._id}`)
+        })
+    },
     edit: (req, res) => {
-        
-    }
+        User.findById(req.params.id).then(user => {
+            res.render('user/edit', { user: user})
+          })
+    },
+    delete: (req, res) => {
+        User.findByIdAndRemove(req.params.id).then(() => {
+      res.redirect('/')
+    })
+      } 
 }
 
 module.exports = userController
