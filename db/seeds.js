@@ -17,7 +17,7 @@ const razor = new Coupons({
 const tide = new Coupons({
     name: "Tide",
     type: "paper",
-    img: "https://scontent.fatl1-2.fna.fbcdn.net/v/t1.0-9/44932841_10217519641126994_5755323173834850304_n.jpg?_nc_cat=101&_nc_ht=scontent.fatl1-2.fna&oh=2747205dc579b0abc890f99b634fe87a&oe=5C7F6D29",
+    img: "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/44941063_10156601449963955_7163544067161194496_n.jpg?_nc_cat=107&_nc_ht=scontent-atl3-1.xx&oh=5745d42afefcf6237f539750c7e12cc5&oe=5C7C27B7",
     price: "$3/1",
     description: "$3 off the purchase of 1",
     expiration_date: 9/17/2016
@@ -26,9 +26,9 @@ const tide = new Coupons({
 const gain = new Coupons({
     name: "Gain",
     type: "paper",
-    img: "https://scontent.fatl1-2.fna.fbcdn.net/v/t1.0-9/44932841_10217519641126994_5755323173834850304_n.jpg?_nc_cat=101&_nc_ht=scontent.fatl1-2.fna&oh=2747205dc579b0abc890f99b634fe87a&oe=5C7F6D29",
-    price: "$3/1",
-    description: "$3 off the purchase of 1",
+    img: "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/45087809_10217816536867904_523161415045873664_n.jpg?_nc_cat=102&_nc_ht=scontent-atl3-1.xx&oh=5baf0a9f2a6be00b4a75896906e6043e&oe=5C891CF7",
+    price: "$2/1",
+    description: "$2 off the purchase of 1",
     expiration_date: 9/17/2016
 })
 const kroger = new Stores ({
