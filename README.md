@@ -32,11 +32,12 @@
 
 #### Wishes & Dreams
 
+ | Tried to do | Suppose to do |
+| --- | --- |
+| ![Image of idea](public/Images/idea1.png) | ![Image of idea](public/Images/idea4.png)|
+| ![Image of idea](public/Images/idea2.png) | ![Image of idea](public/Images/idea3.png) |
+
 - I wanted to be able to save desired coupons to your personal profile once you get to the coupon list. 
-
-![Image of Wireframe](public/Images/idea1.png)
-![Image of Wireframe](public/Images/idea2.png)
-
 
 #### Web Application
 [Click Here For Site](https://krazy-koupon-list.herokuapp.com/)
