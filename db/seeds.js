@@ -10,7 +10,7 @@ const Coupons = require('../models/Coupons.js')
 const razor = new Coupons({
     name: "Bic Razors",
     type: "paper",
-    img: "https://scontent.fatl1-2.fna.fbcdn.net/v/t1.0-9/44932841_10217519641126994_5755323173834850304_n.jpg?_nc_cat=101&_nc_ht=scontent.fatl1-2.fna&oh=2747205dc579b0abc890f99b634fe87a&oe=5C7F6D29",
+    img: "https://cdn1.bigcommerce.com/server4100/529a9/products/50510/images/49820/029-Gillette-Disposable-Razor-2ct-save-3-00-mzFe__67623.1540316925.780.780.jpg?c=2",
     price: "$3/1",
     description: "$3 off the purchase of 1",
     expiration_date: 9/17/2016
@@ -19,7 +19,7 @@ const razor = new Coupons({
 const tide = new Coupons({
     name: "Tide",
     type: "paper",
-    img: "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/44941063_10156601449963955_7163544067161194496_n.jpg?_nc_cat=107&_nc_ht=scontent-atl3-1.xx&oh=5745d42afefcf6237f539750c7e12cc5&oe=5C7C27B7",
+    img: "https://cdn.shopify.com/s/files/1/1827/4185/products/image_1365eb23-6f5a-4f2a-9c5c-c32a830c485e_480x480.jpg?v=1540668858",
     price: "$3/1",
     description: "$3 off the purchase of 1",
     expiration_date: 9/17/2016
@@ -28,7 +28,7 @@ const tide = new Coupons({
 const gain = new Coupons({
     name: "Gain",
     type: "paper",
-    img: "https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/45087809_10217816536867904_523161415045873664_n.jpg?_nc_cat=102&_nc_ht=scontent-atl3-1.xx&oh=5baf0a9f2a6be00b4a75896906e6043e&oe=5C891CF7",
+    img: "https://cdn.shopify.com/s/files/1/1827/4185/products/image_df964b7c-65a5-4423-9ba0-d59ba369ade3_480x480.jpg?v=1539446862",
     price: "$2/1",
     description: "$2 off the purchase of 1",
     expiration_date: 9/17/2016
@@ -36,17 +36,20 @@ const gain = new Coupons({
 
 const kroger = new Stores ({
     name: "kroger",
-   address: "1225 Caroline St NE, Atlanta, GA 30307"
+    address: "1225 Caroline St NE, Atlanta, GA 30307",
+   image: "https://www.supermarketnews.com/sites/supermarketnews.com/files/styles/article_featured_standard/public/Kroger_store_bannerB_1.png?itok=vp_js9GB"
 })
 
 const target = new Stores ({
     name: "target",
-   address: "1275 Caroline St NE, Atlanta, GA 30307",
+    address: "1275 Caroline St NE, Atlanta, GA 30307",
+   image: "https://www.gannett-cdn.com/presto/2018/09/12/PTCN/48846ee2-d2bb-4dbd-84ef-7538f871ffe0-targettradition.jpg?crop=3378,1900,x0,y79&width=3200&height=1680&fit=bounds"
 })
 
 const walmart = new Stores ({
     name: "walmart",
-   address: "835 Martin Luther King Junior Drive Northwest, Atlanta, GA 30314",
+    address: "835 Martin Luther King Junior Drive Northwest, Atlanta, GA 30314",
+   image: "http://www.ktrs.com/wp-content/uploads/2016/05/WALMART.jpg"
 })
 
 const greg = new User ({

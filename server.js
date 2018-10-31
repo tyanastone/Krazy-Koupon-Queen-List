@@ -9,7 +9,7 @@ app.use(express.json())
 app.use('/', routes)
 app.set('view engine', 'hbs')
 
-
+app.use(express.static(__dirname + '/public'))
 
 
 const PORT = process.env.PORT || 3000
