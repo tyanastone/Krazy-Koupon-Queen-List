@@ -1,20 +1,20 @@
-{{!-- <h1>Welcome To Your Stores</h1> --}}
+<h1>Welcome To Your Stores</h1>
 
-<h1>Mother's Local To You</h1>
+
 {{#each stores}}
 <div class="card">
     <div class="card-body">
         <h4 class="card-title">{{name}}</h4>
-{{!-- <a href="/coupons"><button>View Coupons</button></a> --}}
-<a href="/coupons"><button>View Mother's Profile</button></a>
+<a href="/coupons"><button>View Coupons</button></a>
+
 
 
 
 <form action="/stores/{{_id}}?_method=DELETE" method="POST">
-{{!-- <img src="{{image}}"/> --}}
+<img src="{{image}}"/>
 {{address}}
-		{{!-- <button type="submit">Delete store</button> --}}
-        <button type="submit">Delete Profile</button>
+		<button type="submit">Delete store</button>
+        
 		</form>
     </div>
 </div>

@@ -25,6 +25,7 @@ router.delete('/:id', userController.delete)
 router.delete('/stores/:id', storesController.delete)
 
 router.get('/coupons', couponsController.index)
+// router.get('/coupons/:id', couponsController.show)
 
 
 

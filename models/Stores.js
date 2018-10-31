@@ -10,9 +10,9 @@
 const mongoose = require('../db/connections')
 const Schema = mongoose.Schema
 
-const Stores = new Schema({
+const Mother = new Schema({
     name: String,
     address: String 
 })
 
-module.exports = mongoose.model('Stores', Stores)
+module.exports = mongoose.model('Mother', Mother)

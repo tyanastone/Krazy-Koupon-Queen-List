@@ -1,9 +1,10 @@
 const User = require('../models/User.js')
-// const Product = require('../models/Product.js')
+
 const mongoose = require('./connections')
-// const Stores = require('../models/Stores.js')
-const Mother = require('../models/Stores.js')
+const Stores = require('../models/Stores.js')
+
 const Coupons = require('../models/Coupons.js')
+
 
 
 const razor = new Coupons({
@@ -32,34 +33,22 @@ const gain = new Coupons({
     description: "$2 off the purchase of 1",
     expiration_date: 9/17/2016
 })
-// const kroger = new Stores ({
-//     name: "kroger",
-//    address: "1225 Caroline St NE, Atlanta, GA 30307"
-// })
 
-// const target = new Stores ({
-//     name: "target",
-//    address: "1275 Caroline St NE, Atlanta, GA 30307",
-// })
-
-// const walmart = new Stores ({
-//     name: "walmart",
-//    address: "835 Martin Luther King Junior Drive Northwest, Atlanta, GA 30314",
-// })
-const vanessa = new Mother ({
-    name: "vanessa",
-    address: "1225 Caroline St NE, Atlanta, GA 30307"
+const kroger = new Stores ({
+    name: "kroger",
+   address: "1225 Caroline St NE, Atlanta, GA 30307"
 })
 
-const ivana = new Mother ({
-    name: "ivana",
-    address: "1275 Caroline St NE, Atlanta, GA 30307"
+const target = new Stores ({
+    name: "target",
+   address: "1275 Caroline St NE, Atlanta, GA 30307",
 })
 
-const alexandria = new Mother ({
-    name: "alexandria",
-    address: "835 Martin Luther King Junior Drive Northwest, Atlanta, GA 30314"
+const walmart = new Stores ({
+    name: "walmart",
+   address: "835 Martin Luther King Junior Drive Northwest, Atlanta, GA 30314",
 })
+
 const greg = new User ({
     name: "Greg",
     image: "https://unsplash.com/photos/BI91NrppE38"
@@ -85,14 +74,13 @@ User.remove({})
     .then(() => greg.save())
     .then(() => alex.save())
     .then(() => mariah.save())
+    
     .then(() => razor.save())
     .then(() => tide.save())
     .then(() => gain.save())
-    // .then(() => kroger.save())
-    // .then(() => target.save())
-    // .then(() => walmart.save())
-    .then(() => vanessa.save())
-    .then(() => ivana.save())
-    .then(() => alexandria.save())
+    .then(() => kroger.save())
+    .then(() => target.save())
+    .then(() => walmart.save())
+   
     .then(() => console.log("Database seeded successfully"))
 .then(() => mongoose.connection.close())
