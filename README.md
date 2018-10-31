@@ -32,8 +32,8 @@
 
 #### Wishes & Dreams
 
-- I wish that I was able to add a timer to all questions with music.
-- I wish that I was able to add more styling to my game. Most of my time went to html and javascript instead of styling. 
+- I wanted to be able to save desired coupons to your personal profile once you get to the coupon list. 
+- I 
 
 #### Web Application
-[Click Here For Site](https://silly-kepler-3145a0.netlify.com/)
+[Click Here For Site](https://krazy-koupon-list.herokuapp.com/)

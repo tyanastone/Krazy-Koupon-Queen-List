@@ -245,3 +245,10 @@ body{
 h1,h2{
     text-align: center;
 }
+.footer1 {
+    grid-area: 5/1;
+    border: solid;
+    grid-column: span 5;
+    height: 30%;
+    background-image: url('../Images/full-bloom.png');
+}
