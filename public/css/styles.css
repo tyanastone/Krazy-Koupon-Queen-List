@@ -6,7 +6,7 @@
 body {
 	background: #F8F8F6;
 	font-family: 'Josefin Sans', sans-serif;
-
+    background-image: url('../Images/full-bloom.png')
 }
 
 /*===================*/
@@ -88,7 +88,7 @@ main {
 
 
 a {
-	color: #6BB381;
+	color: #0FBCF1;
 	text-decoration: none;
 }
 
@@ -150,16 +150,16 @@ input {
     
     height: 500px;
     display: flex;
-    justify-content: center;   
-    /* image from: <a href='https://pngtree.com/'>Graphics from pngtree.com</a> */
-    background-image: url('../Images/ladyshopping_33.png');   
+    justify-content: center;     
     background-size: 100% 100%;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;   
+    background-image: url('../Images/full-bloom.png');
+    border-radius: 25px; 
 }
 /* adjusted logo image in header */
 .shopping{
    position: absolute;
-   margin-top: 10%;
+   margin-top: 0%;
    height: 50%;
    width: 120%;
   
@@ -219,4 +219,29 @@ span{
     100% {
       opacity: 1;
     }
+}
+/* assigned text for full site and background-color */
+body{
+    font-family: fantasy;
+    background-image: url('../Images//dark-grey-terrazzo.png');
+}
+.content1 {
+    grid-area: 3/2;
+    height: 600px;
+    width: 100%;
+    border: solid;
+    grid-column: span 4;
+    overflow: scroll;  
+    background-image: url('../Images/full-bloom.png');
+    border-radius: 25px;
+   
+}
+.contentWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1,h2{
+    text-align: center;
 }
