@@ -5,7 +5,7 @@
 [Click Here for Assignment Page](https://git.generalassemb.ly/atl-wdi/wdi-curriculum/tree/master/projects/unit_02)
 
  #### Entity Relationship Diagram
-![Image of Wireframe](public/Images/erd.png)
+![Image of ERD](public/Images/erd.png)
 
 #### Wireframe
 ![Image of Wireframe](public/Images/1.png)
@@ -28,12 +28,12 @@
 | Animations |[Animate.css](https://daneden.github.io/animate.css) |
 
 
- #### Commit Count: 50
+ 
 
 #### Wishes & Dreams
 
 - I wanted to be able to save desired coupons to your personal profile once you get to the coupon list. 
-- I 
+
 
 #### Web Application
 [Click Here For Site](https://krazy-koupon-list.herokuapp.com/)
