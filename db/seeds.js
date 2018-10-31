@@ -48,7 +48,7 @@ const target = new Stores ({
 
 const walmart = new Stores ({
     name: "walmart",
-    address: "835 Martin Luther King Junior Drive Northwest, Atlanta, GA 30314",
+    address: "835 Martin Luther King Jr Drive, Atlanta, GA 30314",
    image: "http://www.ktrs.com/wp-content/uploads/2016/05/WALMART.jpg"
 })
 
