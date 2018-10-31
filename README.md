@@ -34,6 +34,9 @@
 
 - I wanted to be able to save desired coupons to your personal profile once you get to the coupon list. 
 
+![Image of Wireframe](public/Images/idea1.png)
+![Image of Wireframe](public/Images/idea2.png)
+
 
 #### Web Application
 [Click Here For Site](https://krazy-koupon-list.herokuapp.com/)
